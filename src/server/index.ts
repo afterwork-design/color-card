@@ -25,4 +25,5 @@ export interface ColorType<T> {
 export type Four = ColorType<FourColor>;
 export type Gradient = ColorType<GradientColor>;
 export const four = fourJson as Four;
+export const paletteDefaultShowColor = four.colors[0];
 export const gradient = gradientJson as Gradient;

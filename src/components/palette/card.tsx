@@ -1,4 +1,4 @@
-import {Grid, Box} from "@chakra-ui/react";
+import {Grid, Box, BoxProps} from "@chakra-ui/react";
 import React, {FC} from "react";
 
 type CardColor = [string, string, string, string];
@@ -6,12 +6,14 @@ interface Props {
     colors: CardColor;
 }
 
-const Card: FC<Props> = ({colors}) => {
+const Card: FC<Props & BoxProps> = ({colors, ...props}) => {
     return (
         <Box
             pos="relative"
             h="0"
             pb="100%"
+            cursor="pointer"
+            {...props}
         >
             <Grid
                 pos="absolute"
