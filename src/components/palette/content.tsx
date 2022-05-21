@@ -16,7 +16,7 @@ const Content: FC<Props> = ({setColor}) => {
             flexWrap="wrap"
             rowGap="40px"
             columnGap="40px"
-            gridTemplateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(5, 1fr)"]}
+            gridTemplateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(5, 1fr)", "repeat(6, 1fr)"]}
         >
             {
                 four.colors.map((color) => (

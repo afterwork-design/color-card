@@ -59,6 +59,16 @@ const Header: React.FC<Props> = ({activeIndex = 0}) => {
                         </Link>
                     ))
                 }
+                <Link
+                    href="https://github.com/afterwork-design/color-card"
+                >
+                    <Image
+                        src="./github.png"
+                        w="40px"
+                        h="25px"
+                        pl="15px"
+                    ></Image>
+                </Link>
             </HStack>
         </HStack>
     );
