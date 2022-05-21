@@ -13,6 +13,10 @@ const Card: FC<Props & BoxProps> = ({colors, ...props}) => {
             h="0"
             pb="100%"
             cursor="pointer"
+            transition="1s"
+            _hover={{
+                transform: "scale(0.9)"
+            }}
             {...props}
         >
             <Grid
