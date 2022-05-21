@@ -32,9 +32,9 @@ const Card: FC<Props & BoxProps> = ({colors, ...props}) => {
                 borderRadius="8px"
                 boxShadow="5px 12px 20px rgba(36, 37, 38, 0.13)"
             >
-                {colors.map((color) => (
+                {colors.map((color, index) => (
                     <Box
-                        key={color}
+                        key={`${color}${index}`}
                         bgColor={color}
                     ></Box>
                 ))}
