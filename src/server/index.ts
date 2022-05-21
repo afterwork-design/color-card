@@ -12,7 +12,7 @@ export interface GradientColor {
     deg: number;
     colors: {
         color: string;
-        pos: string;
+        pos?: string;
     }[];
 }
 

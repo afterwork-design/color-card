@@ -3,51 +3,38 @@
     "en": "gradient",
     "colors": [
         {
-            "deg": 45,
+            "deg": 135,
             "colors": [
-                {
-                    "color": "#ff5d12",
-                    "pos": "10%"
-                },
-                {
-                    "color": "#ff5d12",
-                    "pos": "30%"
-                },
-                {
-                    "color": "#ff5d12"
-                }
+                {"color": "#85FBA7"},
+                {"color": "#13d0f8"}
             ]
         },
         {
             "deg": 135,
             "colors": [
-                {
-                    "color": "#ff5d12",
-                    "pos": "10%"
-                },
-                {
-                    "color": "#ff5d12",
-                    "pos": "30%"
-                },
-                {
-                    "color": "#ff5d12"
-                }
+                {"color": "#FF9A9E"},
+                {"color": "#FAD0C4"}
             ]
         },
         {
-            "deg": 0,
+            "deg": 135,
             "colors": [
-                {
-                    "color": "#ff5d12",
-                    "pos": "10%"
-                },
-                {
-                    "color": "#ff5d12",
-                    "pos": "30%"
-                },
-                {
-                    "color": "#ff5d12"
-                }
+                {"color": "#FFECD2"},
+                {"color": "#FCB69F"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#32b0fc"},
+                {"color": "#0073f0"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#ff692f"},
+                {"color": "#ea453d"}
             ]
         }
     ]
