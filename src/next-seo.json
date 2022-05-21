@@ -1,0 +1,14 @@
+{
+    "title": "KaKa",
+    "description": "Kaka 是一个色板程序",
+    "additionalMetaTags": [
+        {
+            "property": "author",
+            "content": "Tang Weijuan"
+        },
+        {
+            "property": "keywords",
+            "content": "颜色,颜色模板,色卡,颜色参考,color,color card,color picker,color reference,design,develop"
+        }
+    ]
+}
