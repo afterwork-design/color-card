@@ -23,6 +23,17 @@ const Card: FC<Props & BoxProps> = ({gradientColor, ...props}) => {
         });
     };
 
+    const copyColorItem = (color: string) => {
+        navigator.clipboard.writeText(color).then(() => {
+            toast({
+                title: 'color copied!',
+                description: color,
+                status: 'success',
+                duration: 1000
+            });
+        });
+    };
+
     return (
         <RounderBox
             pos="relative"
@@ -51,9 +62,9 @@ const Card: FC<Props & BoxProps> = ({gradientColor, ...props}) => {
                     <Box
                         className="grad"
                         bg={makeLinearGradient(gradientColor)}
-                        w="50%"
+                        w="60%"
                         h="0"
-                        pb="50%"
+                        pb="60%"
                         borderRadius="20px"
                     />
                 </Box>
@@ -73,6 +84,8 @@ const Card: FC<Props & BoxProps> = ({gradientColor, ...props}) => {
                                     bgColor={color.color}
                                     key={`${color.color} ${color.pos}`}
                                     borderRadius="6px"
+                                    cursor="pointer"
+                                    onClick={() => copyColorItem(color.color)}
                                 >
                                 </Box>
                             ))
