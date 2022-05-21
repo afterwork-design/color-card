@@ -1,18 +1,24 @@
 import {Box, BoxProps, HStack, Image, VStack, useToast} from "@chakra-ui/react";
-import React, {FC} from "react";
+import React, {useState, FC, useEffect} from "react";
 import {GradientColor} from "src/server";
 import {RounderBox} from "../primitives";
 import {makeLinearGradient} from "src/util/makeGradient";
 
 interface Props {
     gradientColor: GradientColor;
+    setColorDialogBg: (bgColor: string) => void;
 }
 
-const Card: FC<Props & BoxProps> = ({gradientColor, ...props}) => {
+const Card: FC<Props & BoxProps> = ({gradientColor, setColorDialogBg, ...props}) => {
     const toast = useToast();
 
+    const [gradientColorStr, setGradientColorStr] = useState<string>(makeLinearGradient(gradientColor));
+    useEffect(() => {
+        setGradientColorStr(makeLinearGradient(gradientColor));
+    }, [gradientColor]);
+
     const copyClick: React.MouseEventHandler<HTMLDivElement> = () => {
-        const text = makeLinearGradient(gradientColor);
+        const text = gradientColorStr;
         navigator.clipboard.writeText(text).then(() => {
             toast({
                 title: 'color copied!',
@@ -61,11 +67,13 @@ const Card: FC<Props & BoxProps> = ({gradientColor, ...props}) => {
                 >
                     <Box
                         className="grad"
-                        bg={makeLinearGradient(gradientColor)}
+                        bg={gradientColorStr}
                         w="60%"
                         h="0"
                         pb="60%"
                         borderRadius="20px"
+                        cursor="pointer"
+                        onClick={() => setColorDialogBg(gradientColorStr)}
                     />
                 </Box>
                 <HStack
