@@ -22,7 +22,7 @@ const Header: React.FC<Props> = ({activeIndex = 0}) => {
         <HStack
             justifyContent="space-between"
             h="80px"
-            p="0px 10px"
+            p="0px 20px"
             bgColor="white"
             position="fixed"
             top="0"
@@ -45,7 +45,9 @@ const Header: React.FC<Props> = ({activeIndex = 0}) => {
                     </Image>
                 </H1>
             </HStack>
-            <HStack>
+            <HStack
+                columnGap="10px"
+            >
                 {
                     pages.map((page, index) => (
                         <Link
@@ -62,12 +64,12 @@ const Header: React.FC<Props> = ({activeIndex = 0}) => {
                 }
                 <Link
                     href="https://github.com/afterwork-design/color-card"
+                    target="_blank"
                 >
                     <Image
                         src="./github.png"
-                        w="40px"
+                        w="25px"
                         h="25px"
-                        pl="15px"
                     ></Image>
                 </Link>
             </HStack>
