@@ -40,9 +40,9 @@ const Sider: FC<Props> = ({colors}) => {
             boxShadow="5px 12px 20px rgba(36, 37, 38, 0.25)"
         >
             {
-                colors.map((color) => (
+                colors.map((color, index) => (
                     <RounderBox
-                        key={color}
+                        key={`${color}${index}`}
                         display="flex"
                         flexDir="column"
                         flexGrow={1}
