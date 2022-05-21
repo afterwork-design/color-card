@@ -1,12 +1,31 @@
 import {VStack, Box} from "@chakra-ui/react";
 import React, {FC} from "react";
 import {RounderBox} from "src/components/primitives";
+import {hexToRGB} from "src/util/colorConvert";
 
 interface Props {
     colors: string[];
 }
 
+const copiedText = "copied!";
+
 const Sider: FC<Props> = ({colors}) => {
+
+    const colorClick: React.MouseEventHandler<HTMLDivElement> = (e) => {
+        const divEle = e.target as HTMLDivElement;
+        const colorText = divEle.innerText;
+        if (colorText === copiedText) {
+            return;
+        }
+        navigator.clipboard.writeText(colorText).then(() => {
+            divEle.innerText = copiedText;
+
+            setTimeout(() => {
+                divEle.innerText = colorText;
+            }, 1000);
+        });
+    };
+
     return (
         <VStack
             justifyContent="space-between"
@@ -17,7 +36,7 @@ const Sider: FC<Props> = ({colors}) => {
             bottom="0"
             bgColor="white"
             p="40px"
-            rowGap="40px"
+            rowGap={["10px", "15px", "18px", "20px", "25px", "40px"]}
             boxShadow="5px 12px 20px rgba(36, 37, 38, 0.25)"
         >
             {
@@ -30,16 +49,33 @@ const Sider: FC<Props> = ({colors}) => {
                         alignItems="center"
                         w="100%"
                         boxShadow="1px 1px 12px rgba(36, 37, 38, 0.25)"
+                        rowGap="5px"
+                        paddingBottom="5px"
                     >
                         <Box
                             bgColor={color}
-                            minH="40px"
+                            minH="10px"
                             w="100%"
                             flexGrow={1}
                         >
                         </Box>
-                        <Box>
+                        <Box
+                            onClick={colorClick}
+                            cursor="pointer"
+                            border="1px solid #ebebeb"
+                            p="5px"
+                            borderRadius="4px"
+                        >
                             {color}
+                        </Box>
+                        <Box
+                            onClick={colorClick}
+                            cursor="pointer"
+                            border="1px solid #ebebeb"
+                            p="5px"
+                            borderRadius="4px"
+                        >
+                            {hexToRGB(color)}
                         </Box>
                     </RounderBox>
                 ))
