@@ -1,21 +1,17 @@
 import {LayoutPage} from "../typing";
 import {Box, HStack} from "@chakra-ui/react";
-import Sider from "src/components/sider";
-import Content from "src/components/content";
-import ContentTop from "src/components/contentTop";
+import Header from "src/components/header";
+import Content from "src/components/palette/content";
+import Sider from "src/components/palette/sider";
 
 const Home: LayoutPage = () => {
     return (
         <Box>
-            <ContentTop description="不只是设计师的灵感源泉" />
-            <HStack
-                alignItems="start"
-                columnGap="15px"
-                pt="20px"
-            >
-                <Sider />
+            <Header />
+            <Box>
                 <Content />
-            </HStack>
+                <Sider colors={["#99ffca", "#fcf7f7", "#dadada", "#324968"]} />
+            </Box>
         </Box>
     );
 };

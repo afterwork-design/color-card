@@ -1,0 +1,54 @@
+{
+    "zh": "渐变色",
+    "en": "gradient",
+    "colors": [
+        {
+            "deg": 45,
+            "colors": [
+                {
+                    "color": "#ff5d12",
+                    "pos": "10%"
+                },
+                {
+                    "color": "#ff5d12",
+                    "pos": "30%"
+                },
+                {
+                    "color": "#ff5d12"
+                }
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {
+                    "color": "#ff5d12",
+                    "pos": "10%"
+                },
+                {
+                    "color": "#ff5d12",
+                    "pos": "30%"
+                },
+                {
+                    "color": "#ff5d12"
+                }
+            ]
+        },
+        {
+            "deg": 0,
+            "colors": [
+                {
+                    "color": "#ff5d12",
+                    "pos": "10%"
+                },
+                {
+                    "color": "#ff5d12",
+                    "pos": "30%"
+                },
+                {
+                    "color": "#ff5d12"
+                }
+            ]
+        }
+    ]
+}

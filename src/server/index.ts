@@ -1,22 +1,28 @@
-import siteJson from "./site.json";
-import resourceJson from "./resource.json";
+import fourJson from "./palette.json";
+import gradientJson from "./gradient.json";
 
-export interface Site {
-    title: string;
-    description: string;
-    keywords: string[];
-}
-export interface ResourceItem {
-    name: string;
-    description?: string;
-    url: string;
-    image?: string;
-}
-export interface Resource {
-    name: string;
-    site: ResourceItem[];
-    icon: string;
+export type FourColor = [string, string, string, string];
+
+export interface GradientColorItem {
+    color: string;
+    pos: string;
 }
 
-export const site = siteJson as Site;
-export const resource = resourceJson as Resource[];
+export interface GradientColor {
+    deg: number;
+    colors: {
+        color: string;
+        pos: string;
+    }[];
+}
+
+export interface ColorType<T> {
+    zh: string;
+    en: string;
+    colors: T[];
+}
+
+export type Four = ColorType<FourColor>;
+export type Gradient = ColorType<GradientColor>;
+export const four = fourJson as Four;
+export const gradient = gradientJson as Gradient;
