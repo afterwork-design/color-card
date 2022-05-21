@@ -29,6 +29,7 @@ const Header: React.FC<Props> = ({activeIndex = 0}) => {
             left="0"
             right="0"
             boxShadow="0px 5px 20px rgba(36, 37, 38, 0.25)"
+            zIndex={1}
         >
             <HStack>
                 <Image
