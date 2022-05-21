@@ -5,36 +5,99 @@
         {
             "deg": 135,
             "colors": [
-                {"color": "#85FBA7"},
-                {"color": "#13d0f8"}
+                {"color": "#d6f6ff"},
+                {"color": "#81d3ff"}
             ]
         },
         {
             "deg": 135,
             "colors": [
-                {"color": "#FF9A9E"},
-                {"color": "#FAD0C4"}
+                {"color": "#facfc3"},
+                {"color": "#ff9a9e"}
             ]
         },
         {
             "deg": 135,
             "colors": [
-                {"color": "#FFECD2"},
-                {"color": "#FCB69F"}
+                {"color": "#ffecd2"},
+                {"color": "#fcb69f"}
             ]
         },
         {
             "deg": 135,
             "colors": [
-                {"color": "#32b0fc"},
-                {"color": "#0073f0"}
+                {"color": "#f6d7ff"},
+                {"color": "#b6daff"}
             ]
         },
         {
             "deg": 135,
             "colors": [
-                {"color": "#ff692f"},
-                {"color": "#ea453d"}
+                {"color": "#e4eeff"},
+                {"color": "#fee1fd"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#85fba7"},
+                {"color": "#0ecefb"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#facfc3"},
+                {"color": "#a48aff"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#ae96ff"},
+                {"color": "#8167ff"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#e4daff"},
+                {"color": "#9b7bfe"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#fff9e3"},
+                {"color": "#fee1fd"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#e3eaff"},
+                {"color": "#ffe3e3"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#fbffd2"},
+                {"color": "#d5fc9f"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#ffe5d2"},
+                {"color": "#fca79f"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#e2ebf0"},
+                {"color": "#cfd9df"}
             ]
         }
     ]
