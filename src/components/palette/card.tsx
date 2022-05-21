@@ -34,6 +34,7 @@ const Card: FC<Props & BoxProps> = ({colors, ...props}) => {
             >
                 {colors.map((color) => (
                     <Box
+                        key={color}
                         bgColor={color}
                     ></Box>
                 ))}

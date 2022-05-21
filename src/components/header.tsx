@@ -49,6 +49,7 @@ const Header: React.FC<Props> = ({activeIndex = 0}) => {
                 {
                     pages.map((page, index) => (
                         <Link
+                            key={page.name}
                             href={page.link}
                             border="2px solid transparent"
                             p="10px 2px"

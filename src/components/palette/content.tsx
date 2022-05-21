@@ -21,6 +21,7 @@ const Content: FC<Props> = ({setColor}) => {
             {
                 four.colors.map((color) => (
                     <Card
+                        key={color.toString()}
                         colors={color}
                         onClick={() => setColor(color)}
                     />

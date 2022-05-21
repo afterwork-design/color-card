@@ -42,6 +42,7 @@ const Sider: FC<Props> = ({colors}) => {
             {
                 colors.map((color) => (
                     <RounderBox
+                        key={color}
                         display="flex"
                         flexDir="column"
                         flexGrow={1}
