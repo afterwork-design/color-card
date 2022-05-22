@@ -56,7 +56,6 @@ const Card: FC<Props & BoxProps> = ({gradientColor, setColorDialogBg, ...props})
                 right="0"
                 bottom="0"
                 bg="white"
-                justifyContent="space-between"
             >
                 <Box
                     w="100%"
@@ -64,6 +63,7 @@ const Card: FC<Props & BoxProps> = ({gradientColor, setColorDialogBg, ...props})
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
+                    overflow="hidden"
                 >
                     <Box
                         className="grad"
@@ -74,6 +74,11 @@ const Card: FC<Props & BoxProps> = ({gradientColor, setColorDialogBg, ...props})
                         borderRadius="20px"
                         cursor="pointer"
                         onClick={() => setColorDialogBg(gradientColorStr)}
+                        transition="1s"
+                        _hover={{
+                            transform: "scale(3)",
+                            borderRadius: "50%"
+                        }}
                     />
                 </Box>
                 <HStack
@@ -82,6 +87,7 @@ const Card: FC<Props & BoxProps> = ({gradientColor, setColorDialogBg, ...props})
                     w="100%"
                     h="40px"
                     p="0 20px"
+                    mt="0 !important"
                 >
                     <HStack>
                         {

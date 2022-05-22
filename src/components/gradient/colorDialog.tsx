@@ -5,6 +5,7 @@ import {
     DrawerBody,
     DrawerOverlay,
     DrawerContent,
+    DrawerCloseButton,
     useToast
 } from '@chakra-ui/react'
 
@@ -47,6 +48,7 @@ const ColorDialog: React.FC<Props> = ({
                 onClick={copyClick}
                 title="click to copy"
             >
+                <DrawerCloseButton />
                 <DrawerBody p={0}>
                     <Box
                         h="100%"
