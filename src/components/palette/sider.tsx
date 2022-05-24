@@ -38,6 +38,7 @@ const Sider: FC<Props> = ({colors}) => {
             p="40px"
             rowGap={["10px", "15px", "18px", "20px", "25px", "40px"]}
             boxShadow="5px 12px 20px rgba(36, 37, 38, 0.25)"
+            overflow="auto"
         >
             {
                 colors.map((color, index) => (
@@ -52,6 +53,7 @@ const Sider: FC<Props> = ({colors}) => {
                         boxShadow="1px 1px 12px rgba(36, 37, 38, 0.25)"
                         rowGap="5px"
                         paddingBottom="5px"
+                        minHeight="100px"
                     >
                         <Box
                             bgColor={color}
