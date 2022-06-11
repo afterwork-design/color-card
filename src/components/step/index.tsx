@@ -40,6 +40,7 @@ const Step: FC = () => {
                         boxShadow="5px 12px 20px rgba(36, 37, 38, 0.13)"
                         borderRadius="8px"
                         flexWrap="wrap"
+                        bgColor="white"
                     >
                         {
                             stpeColor.map((hex) => (
