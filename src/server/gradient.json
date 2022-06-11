@@ -99,6 +99,390 @@
                 {"color": "#e2ebf0"},
                 {"color": "#cfd9df"}
             ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFF0D2"},
+                {"color": "#FCE59F"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#E3FFE8"},
+                {"color": "#FFE3E6"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#EEFFBD"},
+                {"color": "#D6FFE9"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#BDF3FF"},
+                {"color": "#FFD6D6"}
+            ]
+        },
+
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#C6F6D5"},
+                {"color": "#BEE3F8"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#B9C5FD"},
+                {"color": "#EFBDFA"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#F6C5EA"},
+                {"color": "#F8C9AD"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FEEBC8"},
+                {"color": "#C6F6D5"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#D6DEEE"},
+                {"color": "#CDC9DE"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#E8F780"},
+                {"color": "#ABE866"}
+            ]
+        },
+
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFF2F2"},
+                {"color": "#F2F2FF"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFF1D6"},
+                {"color": "#FDE6BB"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFEFD5"},
+                {"color": "#FFDAB9"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFF8DC"},
+                {"color": "#D6FFD6"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#E0F1FF"},
+                {"color": "#CDCDFA"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFE0EB"},
+                {"color": "#FFCDC7"}
+            ]
+        },
+
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFE9B6"},
+                {"color": "#FFC6B5"},
+                {"color": "#D9EBF5"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#D3F5CF"},
+                {"color": "#A8DBFA"},
+                {"color": "#635EE2"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#F9DED7"},
+                {"color": "#D2CCE4"},
+                {"color": "#84ACF1"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FCEAB8"},
+                {"color": "#E2E6DD"},
+                {"color": "#D1E5F0"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#8A90F0"},
+                {"color": "#C466D6"},
+                {"color": "#D44E73"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFEDB1"},
+                {"color": "#FEC8A0"},
+                {"color": "#F18386"}
+            ]
+        },
+
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#E4A7AC"},
+                {"color": "#E5A2C6"},
+                {"color": "#C998E9"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#E4C7CA"},
+                {"color": "#BC9AEC"},
+                {"color": "#C998E9"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#6BC4F6"},
+                {"color": "#9298F6"},
+                {"color": "#B57DF6"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#F9DFD4"},
+                {"color": "#E0D2DF"},
+                {"color": "#ACBBEE"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFE8BF"},
+                {"color": "#FEA5B9"},
+                {"color": "#EC83D8"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#BCF7E7"},
+                {"color": "#EDF9F7"},
+                {"color": "#FDE4EC"}
+            ]
+        },
+
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#C5BCFF"},
+                {"color": "#FFB5F3"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFB5F3"},
+                {"color": "#FFB2D1"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFB2D1"},
+                {"color": "#FFBEA2"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFBEA2"},
+                {"color": "#FFD87B"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFD87B"},
+                {"color": "#F9F871"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFAF8A"},
+                {"color": "#E59095"}
+            ]
+        },
+
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#C5BCFF"},
+                {"color": "#80B1F5"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#80B1F5"},
+                {"color": "#00A5DE"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#00A5DE"},
+                {"color": "#0097B9"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#0097B9"},
+                {"color": "#008588"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#008588"},
+                {"color": "#007151"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFAF8A"},
+                {"color": "#C5BCFF"}
+            ]
+        },
+
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#E59095"},
+                {"color": "#B87B9A"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#B87B9A"},
+                {"color": "#836C91"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFAF8A"},
+                {"color": "#D5A561"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#D5A561"},
+                {"color": "#A09C46"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#A09C46"},
+                {"color": "#64913F"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#64913F"},
+                {"color": "#008349"}
+            ]
+        },
+
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#63E6BE"},
+                {"color": "#8CEAA9"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#8CEAA9"},
+                {"color": "#B2EC97"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#FFAF8A"},
+                {"color": "#D8EC8A"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#B2EC97"},
+                {"color": "#D8EC8A"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#8CEAA9"},
+                {"color": "#D8EC8A"}
+            ]
+        },
+        {
+            "deg": 135,
+            "colors": [
+                {"color": "#D8EC8A"},
+                {"color": "#63E6BE"}
+            ]
         }
     ]
 }
