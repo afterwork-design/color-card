@@ -47,6 +47,8 @@ const Step: FC = () => {
                                 rowGap="25px"
                                 p="15px"
                                 flexWrap="wrap"
+                                justifyContent="center"
+                                w="100%"
                             >
                                 {
                                     stpeColor.map((hex) => (
