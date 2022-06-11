@@ -68,9 +68,9 @@ const Card: FC<Props & BoxProps> = ({gradientColor, setColorDialogBg, ...props})
                     <Box
                         className="grad"
                         bg={gradientColorStr}
-                        w="60%"
+                        w="65%"
                         h="0"
-                        pb="60%"
+                        pb="65%"
                         borderRadius="20px"
                         cursor="pointer"
                         onClick={() => setColorDialogBg(gradientColorStr)}

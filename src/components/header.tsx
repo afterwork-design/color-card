@@ -16,6 +16,10 @@ const Header: React.FC<Props> = ({activeIndex = 0}) => {
         {
             name: "Gradient",
             link: "https://afterwork-design.github.io/color-card/gradient"
+        },
+        {
+            name: "Step",
+            link: "https://afterwork-design.github.io/color-card/step"
         }
     ];
     return (
@@ -65,6 +69,7 @@ const Header: React.FC<Props> = ({activeIndex = 0}) => {
                 <Link
                     href="https://github.com/afterwork-design/color-card"
                     target="_blank"
+                    pl="20px"
                 >
                     <Image
                         src="./github.png"

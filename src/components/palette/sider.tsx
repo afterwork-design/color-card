@@ -54,6 +54,8 @@ const Sider: FC<Props> = ({colors}) => {
                         rowGap="5px"
                         paddingBottom="5px"
                         minHeight="100px"
+                        color="rgba(73, 80, 87, 1)"
+                        fontSize="14px"
                     >
                         <Box
                             bgColor={color}
