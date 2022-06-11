@@ -5,18 +5,24 @@ import Header from "src/components/header";
 import Content from "src/components/palette/content";
 import Sider from "src/components/palette/sider";
 import {FourColor, paletteDefaultShowColor} from "src/server";
+import {NextSeo} from "next-seo";
 
 const Home: LayoutPage = () => {
     const [color, setColor] = useState<FourColor>(paletteDefaultShowColor);
 
     return (
-        <Box>
-            <Header />
+        <>
+            <NextSeo
+                title="经典"
+            />
             <Box>
-                <Content setColor={setColor} />
-                <Sider colors={color} />
+                <Header />
+                <Box>
+                    <Content setColor={setColor} />
+                    <Sider colors={color} />
+                </Box>
             </Box>
-        </Box>
+        </>
     );
 };
 
