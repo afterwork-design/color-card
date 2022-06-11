@@ -28,7 +28,7 @@ const Step: FC = () => {
             bgColor="white"
         >
             <VStack
-                pt="130px !important"
+                pt="170px !important"
                 pb="130px !important"
                 rowGap="50px"
                 p="15px"
@@ -38,51 +38,54 @@ const Step: FC = () => {
                 bgColor="white"
             >
                 {
-                    colors.map((stpeColor) => (
-                        <HStack
-                            key={stpeColor.reduce((v1, v2) => v1 + v2)}
-                            columnGap="10px"
-                            rowGap="25px"
-                            p="15px"
-                            flexWrap="wrap"
-                        >
-                            {
-                                stpeColor.map((hex) => (
-                                    <VStack
-                                        alignItems="flex-start"
-                                        fontSize="14px"
-                                        color="rgba(73, 80, 87, 1)"
-                                        m="0 !important"
-                                        key={hex}
-                                    >
-                                        <Box
-                                            bgColor={hex}
-                                            w="100%"
-                                            flexGrow={1}
-                                            minW="120px"
-                                            minH="60px"
-                                            borderRadius="4px"
+                    colors.map((stpeColor) => {
+                        const groupKey = stpeColor.reduce((v1, v2) => v1 + v2);
+                        return (
+                            <HStack
+                                key={groupKey}
+                                columnGap="10px"
+                                rowGap="25px"
+                                p="15px"
+                                flexWrap="wrap"
+                            >
+                                {
+                                    stpeColor.map((hex) => (
+                                        <VStack
+                                            alignItems="flex-start"
+                                            fontSize="14px"
+                                            color="rgba(73, 80, 87, 1)"
+                                            m="0 !important"
+                                            key={groupKey + hex}
                                         >
-                                        </Box>
-                                        <Box
-                                            onClick={colorClick}
-                                            cursor="pointer"
-                                            mt="0.3rem !important"
-                                        >
-                                            {hex}
-                                        </Box>
-                                        <Box
-                                            onClick={colorClick}
-                                            cursor="pointer"
-                                            mt="0.3rem !important"
-                                        >
-                                            {hexToRGB(hex)}
-                                        </Box>
-                                    </VStack>
-                                ))
-                            }
-                        </HStack>
-                    ))
+                                            <Box
+                                                bgColor={hex}
+                                                w="100%"
+                                                flexGrow={1}
+                                                minW="120px"
+                                                minH="80px"
+                                                borderRadius="4px"
+                                            >
+                                            </Box>
+                                            <Box
+                                                onClick={colorClick}
+                                                cursor="pointer"
+                                                mt="0.3rem !important"
+                                            >
+                                                {hex}
+                                            </Box>
+                                            <Box
+                                                onClick={colorClick}
+                                                cursor="pointer"
+                                                mt="0.3rem !important"
+                                            >
+                                                {hexToRGB(hex)}
+                                            </Box>
+                                        </VStack>
+                                    ))
+                                }
+                            </HStack>
+                        )
+                    })
                 }
             </VStack>
         </Box>

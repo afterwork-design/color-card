@@ -1,6 +1,7 @@
 {
-    "title": "KaKa",
-    "description": "Kaka 是一个色板程序",
+    "title": "KaKa 色板",
+    "titleTemplate": "%s | KaKa 色板",
+    "description": "KaKa 提供丰富的配色方案，让配色更加简单",
     "additionalMetaTags": [
         {
             "property": "author",
@@ -8,7 +9,7 @@
         },
         {
             "property": "keywords",
-            "content": "颜色,颜色模板,色卡,颜色参考,color,color card,color picker,color reference,design,develop"
+            "content": "颜色,颜色模板,色卡,渐变色,阶梯色,颜色参考,color,color card,color picker,gradient,step color,color reference,design,develop"
         }
     ]
 }
