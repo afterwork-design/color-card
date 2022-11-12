@@ -1,12 +1,14 @@
-import React, {FC} from "react";
-import {HStack, VStack, Box} from "@chakra-ui/react";
-import {step} from "src/server";
-import {hexToRGB} from "src/util/colorConvert";
+import React, { FC, useState } from "react";
+import { Image, HStack, VStack, Box } from "@chakra-ui/react";
+import { step } from "src/server";
+import { hexToRGB } from "src/util/colorConvert";
 
-const {colors} = step;
+const { colors } = step;
 const copiedText = "copied!";
 
 const Step: FC = () => {
+
+    const [colorReverse, setColorReverse] = useState<boolean>(false);
 
     const colorClick: React.MouseEventHandler<HTMLDivElement> = (e) => {
         const divEle = e.target as HTMLDivElement;
@@ -23,6 +25,8 @@ const Step: FC = () => {
         });
     };
 
+    const reverseButtonClick = () => setColorReverse(!colorReverse);
+
     return (
         <Box
             bgColor="white"
@@ -37,6 +41,13 @@ const Step: FC = () => {
                 margin="0 auto"
                 bgColor="white"
             >
+                <HStack width="100%" p="0 40px" justifyContent="flex-end">
+                    <Image
+                        src="./sort.svg"
+                        cursor="pointer"
+                        onClick={reverseButtonClick}
+                    />
+                </HStack>
                 {
                     colors.map((stpeColor) => {
                         const groupKey = stpeColor.reduce((v1, v2) => v1 + v2);
@@ -51,7 +62,7 @@ const Step: FC = () => {
                                 w="100%"
                             >
                                 {
-                                    stpeColor.map((hex) => (
+                                    (colorReverse ? [...stpeColor].reverse() : stpeColor).map((hex) => (
                                         <VStack
                                             alignItems="flex-start"
                                             fontSize="14px"
